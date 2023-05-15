@@ -69,8 +69,8 @@ export default {
     font-size: 20px;
 }
 #contato img {
-    width: 120px;
-    height: 120px;
+    width: 121px;
+    height: 121px;
     margin: 30px;
 }
 
