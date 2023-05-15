@@ -1,11 +1,3 @@
-<template>
-  <slot>
-    <Header />
-    <Section />
-    <Footer />
-  </slot>
-</template>
-
 <script>
 import Header from './components/IndexHeader.vue'
 import Section from './components/IndexSection.vue'
@@ -17,6 +9,13 @@ export default{
   }
 }
 </script>
+
+<template>
+    <Header />
+    <Section />
+    <Footer />
+</template>
+
 
 <style>
 
