@@ -16,7 +16,7 @@
                 <img src="./../../assets/site_de_paisagismo.png" alt="">
                 <h3>Site de Paisagismo</h3>
                 <h5>HTML5, CSS3, Javascript, Vue.js</h5>
-                <p>&nbsp;O site de paisagismo é uma plataforma digital, com uma interface limpa e minimalista que oferece
+                <p>&nbsp;O site de paisagismo oferece
                     informações sobre serviços de
                     paisagismo, galerias de fotos de projetos realizados, depoimentos de clientes e contato para
                     solicitações de orçamento.
@@ -37,8 +37,7 @@
                 <h3>Site de um Asilo</h3>
                 <h5>HTML5, CSS3, Javascript</h5>
                 <p>&nbsp;O projeto de site de um asilo pode ser desenvolvido com HTML, CSS e JavaScript para criar uma
-                    experiência de usuário agradável e informativa para os visitantes do site. A escolha das cores e fontes
-                    pode ajudar a transmitir uma sensação de tranquilidade e conforto.
+                    experiência de usuário agradável e informativa para os visitantes do site.
                 </p>
             </a>
             <a href="/horadodia" class="projects_iten_box">
@@ -86,6 +85,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 #projetos .Project_itens {
@@ -111,7 +112,7 @@
     border-radius: 25px;
     text-decoration: none;
     color: var(--text);
-    text-align: left;
+    align-items: center;
 }
 
 #projetos .projects_iten_box:hover {
@@ -120,7 +121,7 @@
 
 #projetos .projects_iten_box h3 {
     font-size: 23px;
-    margin: 10px auto 0 0;
+    margin: 10px 0;
 }
 
 #projetos .projects_iten_box h5 {
@@ -130,13 +131,15 @@
 
 #projetos .projects_iten_box p {
     font-size: 15px;
-    margin: 0 !important;
-    width: 100% !important;
+    margin: 0;
+    width: 100%;
 }
 
 .projects_iten_box img {
-    max-height: 200px;
-    width: auto;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 @media (max-width: 600px) {
