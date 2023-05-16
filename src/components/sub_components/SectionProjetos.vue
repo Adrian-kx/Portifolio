@@ -13,7 +13,7 @@
                 </p>
             </a>
             <a target="_blank" href="https://site-paisagismo.vercel.app/" class="projects_iten_box">
-                <img src="./../../assets/site _de_paisagismo.png" alt="">
+                <img src="./../../assets/site_de_paisagismo.png" alt="">
                 <h3>Site de Paisagismo</h3>
                 <h5>HTML5, CSS3, Javascript, Vue.js</h5>
                 <p>&nbsp;O site de paisagismo é uma plataforma digital, com uma interface limpa e minimalista que oferece
@@ -55,10 +55,7 @@
         </div>
     </div>
 </template>
-<script>
-
-export default {
-}
+<script setup>
 </script>
 <style>
 #projetos {

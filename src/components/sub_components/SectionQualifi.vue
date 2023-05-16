@@ -16,7 +16,6 @@
                 <img src="../../icons/js.png" alt="">
                 JavaScript
             </p>
-            <br>
             <p>
                 <img src="../../icons/vue-js.png" alt="">
                 Vue.Js
