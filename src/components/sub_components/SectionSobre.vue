@@ -69,7 +69,7 @@ export default {
 
     #sobre p {
         font-size: 20px;
-        width: 100%;
+        width: 85%;
         margin-top: 20px;
     }
 }</style>
