@@ -4,7 +4,7 @@
         <h1>Projetos</h1>
         <hr>
         <div class="Project_itens">
-            <a href="/qrcode" class="projects_iten_box">
+            <a target="_blank" href="https://qrcode-gules.vercel.app/" class="projects_iten_box">
                 <img src="./../../assets/qrcode.png" alt="">
                 <h3>Gerador de QRCode</h3>
                 <h5>HTML5, CSS3, Javascript, Vue.js, QRious</h5>
@@ -22,7 +22,7 @@
                     solicitações de orçamento.
                 </p>
             </a>
-            <a href="/contador" class="projects_iten_box">
+            <a target="_blank" href="https://counter-design-ejhf.vercel.app/" class="projects_iten_box">
                 <img src="./../../assets/contador.png" alt="">
                 <h3>Contador</h3>
                 <h5>HTML5, CSS3, Javascript, Vue.js</h5>
@@ -32,21 +32,20 @@
 
                 </p>
             </a>
-            <a target="_blank" href="/SiteAsilo" class="projects_iten_box">
-                <img src="./../../assets/asilo_site.png" alt="">
-                <h3>Site de um Asilo</h3>
-                <h5>HTML5, CSS3, Javascript</h5>
-                <p>&nbsp;O projeto de site de um asilo pode ser desenvolvido com HTML, CSS e JavaScript para criar uma
-                    experiência de usuário agradável e informativa para os visitantes do site.
+            <a target="_blank" href="https://blog-two-mu-50.vercel.app/" class="projects_iten_box">
+                <img src="./../../assets/blogIMG.png" alt="">
+                <h3>BlogNews</h3>
+                <h5>HTML5 e CSS3</h5>
+                <p>&nbsp;O projeto BlogNews, é um template minimalista de um blog de noticiário, com login, cadastro, perfil
+                    que postou anotícia, qual o cargo desta pessoa, entre outras funcionalidade.
                 </p>
             </a>
-            <a href="/horadodia" class="projects_iten_box">
-                <img src="./../../assets/horadodia.png" alt="">
-                <h3>Hora Do Dia</h3>
-                <h5>HTML5, CSS3, Javascript</h5>
-                <p>&nbsp;O projeto Hora do Dia é um exemplo simples da usabilidade do Javascript.
-                    Como o nome sugere, o objetivo do projeto é ler a hora atual e retornar um imgame, uma cor de fundo e um
-                    texto.
+            <a target="_blank" href="https://knife-loja.vercel.app/" class="projects_iten_box">
+                <img src="./../../assets/knifeStore.png" alt="">
+                <h3>Knife Store</h3>
+                <h5>HTML5, CSS3, Javascript e Bootstrap</h5>
+                <p>&nbsp;O projeto Knife Store é uma template de loja (no estilo Ecommerce), com várias funcionalidades
+                    dentro dele, como multi páginas, carrosséis animados, tela de registro e de login, e o design responsvo.
 
                 </p>
             </a>
@@ -64,7 +63,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--text);
-    margin: 50px auto 0px auto ;
+    margin: 50px auto 0px auto;
 }
 
 #projetos hr {
@@ -157,8 +156,9 @@
     #projetos .projects_iten_box {
         margin: 10px;
     }
+
     #projetos hr {
-    width: 90%;
-}
+        width: 90%;
+    }
 }
 </style>
