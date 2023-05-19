@@ -66,20 +66,16 @@ export default {
     justify-content: center;
     align-items: center;
     font-family: 'Courier Prime Italic';
+    position: relative;
+    color: var(--text);
+    text-decoration: none;
+    margin: 0px;
     font-size: 20px;
 }
 #contato img {
     width: 121px;
     height: 121px;
     margin: 30px;
-}
-
-#contato .contato_iten a {
-    position: relative;
-    color: var(--text);
-    text-decoration: none;
-    margin: 20px;
-    font-size: 20px;
 }
 #contato .contato_iten a::before {
     content: '';

@@ -25,17 +25,18 @@ export default {
 </script>
 <style>
 #sobre {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     color: var(--text);
-    margin-top: 40px;
+    padding: 25px 0 0 0 ;
+    box-shadow: 0 -35px 45px 15px rgb(0, 0, 0);
 }
 
 #sobre hr {
-    width: 70%;
+    width: 50%;
     color: var(--text);
     border: 1px solid var(--text);
 }
@@ -48,20 +49,22 @@ export default {
 
 #sobre p {
     font-size: 20px;
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     text-align: left;
 }
-
+@media (max-width: 1200px){
+    #sobre p {
+        font-size: 20px;
+        width: 90%;
+        margin-top: 20px;
+    }
+}
 @media (max-width: 600px) {
     #sobre h1 {
         font-size: 35px;
-    }
-
-    #sobre {
-        width: 85%;
     }
 
     #sobre p {

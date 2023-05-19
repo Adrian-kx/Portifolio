@@ -58,18 +58,11 @@ export default {
     margin: 0;
     font-family: 'Courier Prime italic', Courier, monospace;
 }
-#qualificacoes .icon_qualifi{
+
+#qualificacoes .icon_qualifi {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-#qualificacoes .icon_qualifi p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Courier Prime Italic';
-    font-size: 20px;
 }
 
 #qualificacoes img {
@@ -78,11 +71,17 @@ export default {
     margin: 30px;
 }
 
-.icon_qualifi p {
+#qualificacoes .icon_qualifi p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier Prime Italic';
+    font-size: 20px;
     position: relative;
     color: var(--text);
     text-decoration: none;
-    margin: 20px;
+    margin: 0px;
     font-size: 20px;
 }
 
@@ -104,21 +103,24 @@ export default {
     transform-origin: left;
     transform: scaleX(1);
 }
-@media (max-width:600px){
+
+@media (max-width:600px) {
     #qualificacoes {
-    width: 100%;
-    margin: 50px auto;
-}
-#qualificacoes svg {
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-}
-.icon_qualifi p {
-    margin: 10px;
-}
-#qualificacoes h1 {
-    font-size: 35px;
-}
-}
-</style>
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    #qualificacoes svg {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .icon_qualifi p {
+        margin: 10px;
+    }
+
+    #qualificacoes h1 {
+        font-size: 35px;
+    }
+}</style>

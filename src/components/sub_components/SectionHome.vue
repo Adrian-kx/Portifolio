@@ -19,7 +19,7 @@ export default {
 #home {
     background-image: url(../../assets/backHome.png);
     width: 100%;
-    height: 550px;
+    padding: 45px 0 55px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ export default {
 
 #home .box_sobre {
     width: 25%;
-    height: 80%;
+    height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
