@@ -72,4 +72,7 @@ export default {
         width: 85%;
         margin-top: 20px;
     }
+    #sobre hr {
+    width: 90%;
+}
 }</style>

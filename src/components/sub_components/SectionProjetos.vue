@@ -58,7 +58,7 @@
 </script>
 <style>
 #projetos {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -68,7 +68,7 @@
 }
 
 #projetos hr {
-    width: 70%;
+    width: 50%;
     color: var(--text);
     border: 1px solid var(--text);
 }
@@ -95,7 +95,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 50px auto;
-    width: 100%;
+    width: 80%;
 
 }
 
@@ -106,7 +106,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 15px 20px 15px;
-    margin: 25px 5px;
+    margin: 25px 15px;
     background: rgb(255, 255, 255);
     background: linear-gradient(210deg, rgba(255, 255, 255, 0.329) 0%, rgba(0, 0, 0, 0.121) 100%);
     border-radius: 25px;
@@ -145,7 +145,7 @@
 @media (max-width: 600px) {
     #projetos {
         width: 100%;
-        margin: 50px auto;
+        margin: 50px auto 0 auto;
     }
 
     #projetos h1 {
@@ -157,5 +157,8 @@
     #projetos .projects_iten_box {
         margin: 10px;
     }
+    #projetos hr {
+    width: 90%;
+}
 }
 </style>

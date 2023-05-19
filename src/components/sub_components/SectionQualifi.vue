@@ -38,17 +38,17 @@ export default {
 </script>
 <style>
 #qualificacoes {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     color: var(--text);
-    margin: 50px auto;
+    margin: 50px 0;
 }
 
 #qualificacoes hr {
-    width: 70%;
+    width: 50%;
     color: var(--text);
     border: 1px solid var(--text);
 }
@@ -63,12 +63,13 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 60%;
 }
 
 #qualificacoes img {
     width: 120px;
     height: 120px;
-    margin: 30px;
+    margin: 40px;
 }
 
 #qualificacoes .icon_qualifi p {
@@ -81,7 +82,6 @@ export default {
     position: relative;
     color: var(--text);
     text-decoration: none;
-    margin: 0px;
     font-size: 20px;
 }
 
@@ -106,21 +106,26 @@ export default {
 
 @media (max-width:600px) {
     #qualificacoes {
-        width: 100%;
-        margin: 50px auto;
+        width: 90%;
+        margin: 50px 0;
+    }
+    #qualificacoes img {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
     }
 
-    #qualificacoes svg {
-        width: 80px;
-        height: 80px;
-        margin: 10px;
-    }
-
-    .icon_qualifi p {
-        margin: 10px;
+    #qualificacoes .icon_qualifi p {
+        margin: 0px;
     }
 
     #qualificacoes h1 {
         font-size: 35px;
     }
+    #qualificacoes .icon_qualifi {
+    width: 100%;
+}
+#qualificacoes hr {
+    width: 90%;
+}
 }</style>

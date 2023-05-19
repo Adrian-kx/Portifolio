@@ -30,7 +30,7 @@ export default {
 </script>
 <style>
 #contato {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,7 +40,7 @@ export default {
 }
 
 #contato hr {
-    width: 70%;
+    width: 50%;
     color: var(--text);
     border: 1px solid var(--text);
 }
@@ -99,7 +99,7 @@ export default {
 @media (max-width:600px){
     #contato {
     width: 100%;
-    margin: 50px auto;
+    margin: 0px auto 50px auto;
 }
 #contato svg {
     width: 80px;
@@ -111,6 +111,9 @@ export default {
 }
 #qualificacoes h1 {
     font-size: 35px;
+}
+#contato hr {
+    width: 90%;
 }
 }
 </style> 
