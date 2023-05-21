@@ -4,7 +4,7 @@
         <h1>Projetos</h1>
         <hr>
         <div class="Project_itens">
-            <a target="_blank" href="https://qrcode-gules.vercel.app/" class="projects_iten_box">
+            <a target="_blank" href="https://qr-code-generator-five-psi.vercel.app/" class="projects_iten_box">
                 <img src="./../../assets/qrcode.png" alt="">
                 <h3>Gerador de QRCode</h3>
                 <h5>HTML5, CSS3, Javascript, Vue.js, QRious</h5>
