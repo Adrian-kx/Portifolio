@@ -66,12 +66,6 @@ export default {
     width: 60%;
 }
 
-#qualificacoes img {
-    width: 120px;
-    height: 120px;
-    margin: 40px;
-}
-
 #qualificacoes .icon_qualifi p {
     display: flex;
     flex-direction: column;
@@ -85,23 +79,26 @@ export default {
     font-size: 20px;
 }
 
-.icon_qualifi p::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    background-color: var(--text);
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+#qualificacoes img {
+    width: 120px;
+    height: 120px;
+    margin: 40px;
+    display: inline-block;
+    transition: transform 0.2s;
 }
 
-.icon_qualifi p:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+#qualificacoes .icon_qualifi p:hover img {
+    animation: spin 0.5s 1 linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 @media (max-width:600px) {
@@ -109,6 +106,7 @@ export default {
         width: 90%;
         margin: 50px 0;
     }
+
     #qualificacoes img {
         width: 120px;
         height: 120px;
@@ -122,10 +120,12 @@ export default {
     #qualificacoes h1 {
         font-size: 35px;
     }
+
     #qualificacoes .icon_qualifi {
-    width: 100%;
-}
-#qualificacoes hr {
-    width: 90%;
-}
+        width: 100%;
+    }
+
+    #qualificacoes hr {
+        width: 90%;
+    }
 }</style>

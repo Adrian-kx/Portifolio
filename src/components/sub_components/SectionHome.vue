@@ -2,11 +2,9 @@
     <div id="home">
         <div class="box_sobre">
             <h3>Adrian Kauã Xavier</h3>
-            <p>
-                &nbsp; Olá, eu sou Adrian e sou um Desenvolvedor Front-end. Sou Apaixonado por Desenvolver e tenho
+            <p>&nbsp; Olá, eu sou Adrian e sou um Desenvolvedor Front-end. Sou Apaixonado por Desenvolver e tenho
             2 anos de experiência criando projetos pessoais. Desde pequeno, sempre fui fascinado pela Tecnologia e por isso
-            decidi seguir uma carreira nesta área.
-            </p>
+            decidi seguir uma carreira nesta área.</p>
         </div>
     </div>
 </template>
@@ -19,7 +17,7 @@ export default {
 #home {
     background-image: url(../../assets/backHome.png);
     width: 100%;
-    padding: 45px 0 55px 0;
+    padding: 65px 0 75px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +29,7 @@ export default {
 }
 
 #home .box_sobre {
-    width: 25%;
+    width: 30%;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -39,7 +37,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    padding:0 50px;
+    padding:0 40px;
     border-radius: 25px;
     box-shadow: 1px 1px 15px 2px rgba(106, 106, 106, 0.21);
 }
@@ -61,13 +59,13 @@ export default {
 }
 
 #home .box_sobre p {
-    font-family: 'Courier Prime', Courier, monospace;
+    font-family: 'Courier normal', Courier, monospace;
     font-size: 1.3em;
     text-align: left;
 }
 
 #home .box_sobre h3 {
-    font-size: 35px;
+    font-size: 40px;
     margin: 0;
     font-family: 'Courier Prime italic', Courier, monospace;
     color: var(--text);
@@ -89,14 +87,13 @@ export default {
     }
 
     #home .box_sobre p {
-        font-family: 'Courier Prime italic', Courier, monospace;
+        font-family: 'Courier normal', Courier, monospace;
         font-size: 0.9em;
     }
 
     #home .box_sobre h3 {
         font-size: 25px;
         margin: 0;
-        font-family: 'Courier Prime italic', Courier, monospace;
     }
 
     #home {

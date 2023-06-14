@@ -24,9 +24,7 @@
     </div>
 </template>
 <script>
-export default {
-
-}
+export default {}
 </script>
 <style>
 #contato {
@@ -56,7 +54,7 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     margin: 0px auto;
-    width: 100%;
+    width: 80%;
 
 
 }
@@ -76,26 +74,16 @@ export default {
     width: 121px;
     height: 121px;
     margin: 30px;
+    display: inline-block;
+  transition: transform 0.5s;
 }
-#contato .contato_iten a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    background-color: var(--text);
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+#contato .contato_iten a:hover img {
+  animation: spin 0.5s linear 1;
 }
-#contato .contato_iten a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+@keyframes spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
 }
-
-
 @media (max-width:600px){
     #contato {
     width: 100%;

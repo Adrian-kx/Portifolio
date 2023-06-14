@@ -4,10 +4,6 @@
             <p>
                 Direitos Reservados 2023 © Adrian Kauã Xavier
             </p>
-            <hr class="no_responsive">
-            <p>
-                <a target="_blank" href="https://icons8.com/"> icons by Icons8</a>
-            </p>
 
         </div>
     </footer>
@@ -41,16 +37,6 @@ footer p a{
     align-items: center;
     justify-content: center;
     color: var(--text);
-}
-footer hr {
-    height: 60%;
-    color: var(--text);
-    border: 1px solid var(--text);
-    display: flex;
-    margin: auto 0;
-    align-items: center;
-    justify-content: center;
-
 }
 @media (max-width: 1000px){
     footer .by{
