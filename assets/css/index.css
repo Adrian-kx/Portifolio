@@ -76,7 +76,7 @@ ul.links li .link {
     transform-origin: left;
     transform: scaleX(1);
 }
-div.home{
+div#home{
     display: flex;
     width: 100%;
     height: 600px;
@@ -85,37 +85,41 @@ div.home{
     font-family: var(--bold);
     padding: 0px 200px;
 }
-div.home div.textHome{
+div#home div.textHome{
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
 }
-div.home div.textHome p.helloHome{
+div#home div.textHome p.helloHome{
     display: flex;
     color: var(--cor-principal);
     font-size: 22px;
+    margin: 10px 0;
 }
 
-div.home div.textHome h1{
+div#home div.textHome h1{
     display: flex;
     font-size: 75px;
-    margin: 5px 0;
+    margin: 15px 0;
+    font-family: var(--bold);
 }
-div.home div.textHome div.anmHome{
+div#home div.textHome div.anmHome{
     display: flex;
 }
-div.home div.textHome div.anmHome h3#animationTextHome  {
+div#home div.textHome div.anmHome h3#animationTextHome  {
     border-right: 1px solid #000;
     white-space: nowrap;
     overflow: hidden;
     animation: escrevendo 0.1s steps(40, end);
     font-family: var(--bold);
     font-size: 25px;
+    color: var(--cor-principal);
+    margin: 10px 0;
 }
 
 
-div.home div.animationHome {
+div#home div.animationHome {
     position: relative;
     height: 400px;
     align-items: center;
@@ -124,9 +128,9 @@ div.home div.animationHome {
     width: 400px;
     background-color: var(--cor-principal);
     border-radius: 50%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adicione a sombra desejada aqui */
+    box-shadow: 1px 1px 20px 2px #10be00;
 }
-div.home div.animationHome::after {
+div#home div.animationHome::after {
     content: "";
     position: absolute;
     bottom: 40px;
@@ -139,7 +143,7 @@ div.home div.animationHome::after {
     z-index: 1; /* Certifique-se de que a sombra esteja atrás da imagem */
   }
 
-div.home div.animationHome img#imgAnimationHome {
+div#home div.animationHome img#imgAnimationHome {
     position: absolute;
     top: 0;
     width: 100%;
@@ -148,3 +152,16 @@ div.home div.animationHome img#imgAnimationHome {
 }
 
 
+@media (max-width: 1200px){
+    div#home{
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+    div#home div.textHome{
+        margin: 50px 0;
+    }
+    div#home div.animationHome{
+        margin: 50px 0;
+    }
+}
