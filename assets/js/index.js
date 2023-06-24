@@ -1,0 +1,32 @@
+(function (){
+    function desativarDragDrop () {
+      document.addEventListener('dragstart', (evento) => evento.preventDefault(), false)
+      document.addEventListener('drop', (evento) => evento.preventDefault(), false)
+    }
+    desativarDragDrop()
+  }())
+
+//o que vai ser escrito no Home
+
+var texto = "Desenvolvedor Web Front End."; 
+var tempoEscrita = 100;
+
+var elementoTexto = document.getElementById("animationTextHome");
+var indiceCaractere = 0;
+
+function escreverTexto() {
+    elementoTexto.textContent += texto.charAt(indiceCaractere);
+    indiceCaractere++;
+
+    if (indiceCaractere < texto.length) {
+        setTimeout(escreverTexto, tempoEscrita);
+    }
+}
+
+escreverTexto();
+
+
+setTimeout(function() {
+  var imagem = document.getElementById("imgAnimationHome");
+  imagem.style.animationPlayState = "running";
+}, 2000); 

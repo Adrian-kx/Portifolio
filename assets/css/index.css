@@ -1,0 +1,150 @@
+@import './animation.css';
+@import './normalize.css';
+@import './scroolbar.css';
+@import './variables.css';
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--bold);
+    align-items: center;
+}
+
+header nav a img.logo {
+    width: 177.7px;
+    height: 50px;
+}
+
+header nav ul.links {
+    list-style: none;
+    display: flex;
+}
+
+nav ul.links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+}
+
+
+ul.links li .link {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--cor-principal);
+}
+
+.link p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--cor-principal);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .7s ease-in-out;
+}
+
+.link:hover p::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+div.home{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--bold);
+    padding: 0px 200px;
+}
+div.home div.textHome{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+div.home div.textHome p.helloHome{
+    display: flex;
+    color: var(--cor-principal);
+    font-size: 22px;
+}
+
+div.home div.textHome h1{
+    display: flex;
+    font-size: 75px;
+    margin: 5px 0;
+}
+div.home div.textHome div.anmHome{
+    display: flex;
+}
+div.home div.textHome div.anmHome h3#animationTextHome  {
+    border-right: 1px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: escrevendo 0.1s steps(40, end);
+    font-family: var(--bold);
+    font-size: 25px;
+}
+
+
+div.home div.animationHome {
+    position: relative;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background-color: var(--cor-principal);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adicione a sombra desejada aqui */
+}
+div.home div.animationHome::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    width: 100%;
+    border-radius: 70%;
+    height: 40px; /* Altura da sombra */
+    filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.329); /* Cor da sombra */
+    z-index: 1; /* Certifique-se de que a sombra esteja atrás da imagem */
+  }
+
+div.home div.animationHome img#imgAnimationHome {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation: subir-descer 5s ease-in-out infinite;
+    z-index: 2;
+}
+
+

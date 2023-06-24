@@ -3,10 +3,8 @@
     /* Variáveis de Cores */
     --cor-branco: #FFFFFF;
     --cor-preto: #000000;
-    --cor-principal: #e3e4ed;
-    --cor-cinza-escuro: #9d9d9d;
-  
-    /* Variáveis de Fontes */
+    --cor-principal: #10be00;
+    --cor-cinza-claro: #cdcdcd;
     --regular: 'mark-pro-regular';
     --bold: 'mark-pro-bold';
   }
@@ -15,12 +13,12 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    src: url('../../../files/fonts/mark-pro-bold.woff') format('woff');
+    src: url('./../fonts/mark-pro-bold.woff') format('woff');
   }
   @font-face {
     font-family: 'mark-pro-regular';
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    src: url('../../../files/fonts/mark-pro-regular.woff') format('woff');
+    src: url('./../fonts/mark-pro-regular.woff') format('woff');
   }
