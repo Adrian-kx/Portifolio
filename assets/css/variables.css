@@ -1,10 +1,14 @@
 :root {
 
     /* Variáveis de Cores */
-    --cor-branco: #FFFFFF;
+    --cor-branco: #ffffff;
+    --cor-fundo-claro:#ffffffa5;
     --cor-preto: #000000;
     --cor-principal: #10be00;
-    --cor-cinza-claro: #cdcdcd;
+    --cor-cinza-claro: #cdcdcdbb;
+    
+
+    
     --regular: 'mark-pro-regular';
     --bold: 'mark-pro-bold';
   }
