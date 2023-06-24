@@ -90,12 +90,11 @@ ul.links li .link {
 section{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 div#home{
     display: flex;
     width: 100%;
-    height: 630px;
+    height: 650px;
     justify-content: space-between;
     align-items: center;
     font-family: var(--bold);
@@ -183,6 +182,7 @@ div#sobre div.imgSobre{
     box-shadow: 0px 0px 15px 3px black;
     display: flex;
     position: relative;
+    margin: auto 30px;
 }
 div#sobre div.imgSobre:hover{
     box-shadow: 0px 0px 25px 3px black;
@@ -192,7 +192,8 @@ div#sobre div.imgSobre img{
 }
 div#sobre div.textSobre{
     width: 60%;
-    padding: 65px;
+    padding: 10px;
+    margin: auto 30px;
 }
 div#sobre div.textSobre h2{
 font-family: var(--bold);
@@ -202,7 +203,7 @@ font-size: 30px;
 
 div#sobre div.textSobre p{
     font-family: var(--regular);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 div#projetos{
@@ -211,15 +212,74 @@ div#projetos{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+div#projetos h1.titleProjetos{
+    margin: 50px 0;
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 45px;
+}
 
+div#projetos div.projetosCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+div#projetos div.projectcard{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    background-color: var(--cor-fundo-claro);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.362) ;
+    margin: 15px;
+}
+div#projetos div.projectcard div.linkCard{
+    display: none;
+}
 
+div#projetos div.projectcard img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 250px;
+    border-radius: 15px;
+    width: 80%;
+    object-fit: cover;
+}
+div#projetos div.projectcard h2.titleCard{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 20px;
+}
 
-
-
-
+div#projetos div.projectcard p.descCard{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-family: var(--regular);
+}
+div#projetos div.projectcard h5.tecCard{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 20px;
+}
 
 
 
