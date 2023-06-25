@@ -190,7 +190,7 @@ div#sobre {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: var(--cor-fundo-claro);
     padding: 50px 200px;
     align-items: center;
@@ -198,17 +198,12 @@ div#sobre {
 
 div#sobre div.imgSobre {
     width: 400px;
-    max-height: 400px;
+    height: 400px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
     display: flex;
-    position: relative;
-    margin: auto 30px;
     object-fit: cover;
-    justify-content: center;
-    align-items: center;
-
 }
 
 div#sobre div.imgSobre:hover {
@@ -217,14 +212,13 @@ div#sobre div.imgSobre:hover {
 }
 
 div#sobre div.imgSobre img {
-    display: flex;
     width: 100%;
+    height: 100%;
 }
 
 div#sobre div.textSobre {
-    width: 60%;
+    max-width: 600px;
     padding: 10px;
-    margin: auto 30px;
 }
 
 div#sobre div.textSobre h2 {
@@ -505,7 +499,7 @@ div#contato div.textContato a.cardContato img {
     margin: 20px;
 }
 
-body hr.section_footer{
+body hr.section_footer {
     width: 80%;
     background-color: #0000007b;
     height: 1px;
@@ -515,7 +509,7 @@ body hr.section_footer{
     margin: auto;
 }
 
-footer{
+footer {
     width: 100%;
     height: 200px;
     top: 0;
@@ -525,12 +519,13 @@ footer{
     align-items: center;
     padding: 50px 200px;
 }
-footer img.logo{
+
+footer img.logo {
     width: 177.7px;
     height: 50px;
 }
 
-footer div.direitos p{
+footer div.direitos p {
     color: var(--cor-preto);
     font-family: var(--regular);
 }
@@ -544,6 +539,62 @@ footer div.direitos p{
 
 
 @media (max-width: 1100px) {
+
+
+    header,
+    div#home,
+    div#conhecimentos,
+    div#contato,
+    footer {
+        padding: 0 150px;
+    }
+
+    div#sobre{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 150px;
+    }
+    div#sobre div.imgSobre{
+        width: 300px;
+        height: 300px;
+    }
+    div#sobre div.textSobre{
+        height: 280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div#sobre div.textSobre p{
+        font-size: 2vh;
+
+    }
+
+    div#projetos{
+        padding: 25px 10px;
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+    div#contato div.contentContato{
+        height: 400px;
+    }
+    lottie-player{
+
+        display: none;
+    }
+    div#contato div.contentContato div.textContato{
+        margin: 0;
+    }
+
     div#home {
         flex-direction: column;
         padding: 0;
