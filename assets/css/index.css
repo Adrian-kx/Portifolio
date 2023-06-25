@@ -14,6 +14,7 @@ header {
     padding: 10px 0px;
     display: flex;
     justify-content: center;
+    padding: 0 200px;
     align-items: center;
 }
 
@@ -37,7 +38,6 @@ header nav {
     width: 100%;
     height: 100%;
     display: flex;
-    margin: 0 200px;
     flex-direction: row;
     justify-content: space-between;
     font-family: var(--bold);
@@ -385,7 +385,6 @@ div#projetos div.projectcard div.linkCard a.verSiteCard img {
 }
 
 #conhecimentos {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -451,6 +450,7 @@ DIV#contato {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 0;
 }
 
 div#contato h1.titleCcontato {
@@ -462,16 +462,19 @@ div#contato h1.titleCcontato {
 div#contato div.contentContato {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: 550px;
 }
 
 div#contato div.contentContato div.textContato {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
 }
 
 div#contato div.contentContato div.textContato a.cardContato {
@@ -488,6 +491,7 @@ div#contato div.contentContato div.textContato a.cardContato {
     box-shadow: 0px 0px 15px 3px hsl(0, 0%, 0%, 0.4);
     margin: 10px;
     color: #000;
+    font-family: var(--regular);
 }
 
 div#contato div.textContato a.cardContato:hover {
@@ -500,6 +504,41 @@ div#contato div.textContato a.cardContato img {
     height: 40px;
     margin: 20px;
 }
+
+body hr.section_footer{
+    width: 80%;
+    background-color: #0000007b;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    top: 0;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+}
+footer img.logo{
+    width: 177.7px;
+    height: 50px;
+}
+
+footer div.direitos p{
+    color: var(--cor-preto);
+    font-family: var(--regular);
+}
+
+
+
+
+
 
 
 

@@ -17,10 +17,3 @@ html {
 ::-webkit-scrollbar-track {
   background-color: var(--cor-cinza-claro);
 }
-
-/* Personalização da barra de rolagem para navegadores que não suportam as propriedades CSS */
-/* Nesse caso, a aparência da barra de rolagem será a padrão do sistema operacional */
-::-ms-scrollbar {
-  /* Estilos para navegadores da família Microsoft (Edge, IE) */
-}
-
