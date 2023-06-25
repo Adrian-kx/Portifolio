@@ -2,9 +2,11 @@
 @import './normalize.css';
 @import './scroolbar.css';
 @import './variables.css';
-body{
+
+body {
     background-color: var(--cor-cinza-claro);
 }
+
 header {
     width: 100%;
     height: 100px;
@@ -14,15 +16,23 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .header-scrolled {
     position: fixed;
-    backdrop-filter: blur(50px); /* Adicionando o efeito de desfoque */
-    -webkit-backdrop-filter: blur(50px); /* Cor do cabeçalho quando a página é rolada */
+    backdrop-filter: blur(50px);
+    /* Adicionando o efeito de desfoque */
+    -webkit-backdrop-filter: blur(50px);
+    /* Cor do cabeçalho quando a página é rolada */
     background-color: var(--cor-fundo-claro);
     border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.208);
     z-index: 1000;
 }
+
+img.githubIcon {
+    filter: brightness(90) invert(1);
+}
+
 header nav {
     width: 100%;
     height: 100%;
@@ -54,7 +64,7 @@ nav ul.links li {
 
 
 ul.links li .link {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -87,11 +97,13 @@ ul.links li .link {
     transform-origin: left;
     transform: scaleX(1);
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
 }
-div#home{
+
+div#home {
     display: flex;
     width: 100%;
     height: 650px;
@@ -100,29 +112,33 @@ div#home{
     font-family: var(--bold);
     padding: 0px 200px;
 }
-div#home div.textHome{
+
+div#home div.textHome {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
 }
-div#home div.textHome p.helloHome{
+
+div#home div.textHome p.helloHome {
     display: flex;
     color: var(--cor-principal);
     font-size: 22px;
     margin: 10px 0;
 }
 
-div#home div.textHome h1{
+div#home div.textHome h1 {
     display: flex;
     font-size: 75px;
     margin: 15px 0;
     font-family: var(--bold);
 }
-div#home div.textHome div.anmHome{
+
+div#home div.textHome div.anmHome {
     display: flex;
 }
-div#home div.textHome div.anmHome h3#animationTextHome  {
+
+div#home div.textHome div.anmHome h3#animationTextHome {
     border-right: 1px solid #000;
     white-space: nowrap;
     overflow: hidden;
@@ -145,6 +161,7 @@ div#home div.animationHome {
     border-radius: 50%;
     box-shadow: 1px 1px 20px 2px #10be00;
 }
+
 div#home div.animationHome::after {
     content: "";
     position: absolute;
@@ -152,11 +169,14 @@ div#home div.animationHome::after {
     display: flex;
     width: 100%;
     border-radius: 70%;
-    height: 40px; /* Altura da sombra */
+    height: 40px;
+    /* Altura da sombra */
     filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.329); /* Cor da sombra */
-    z-index: 1; /* Certifique-se de que a sombra esteja atrás da imagem */
-  }
+    background-color: rgba(0, 0, 0, 0.329);
+    /* Cor da sombra */
+    z-index: 1;
+    /* Certifique-se de que a sombra esteja atrás da imagem */
+}
 
 div#home div.animationHome img#imgAnimationHome {
     position: absolute;
@@ -166,135 +186,336 @@ div#home div.animationHome img#imgAnimationHome {
     z-index: 2;
 }
 
-div#sobre{
+div#sobre {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 600px;
     background-color: var(--cor-fundo-claro);
-    padding: 0px 200px;
+    padding: 50px 200px;
     align-items: center;
 }
-div#sobre div.imgSobre{
-    width: 65vh;
+
+div#sobre div.imgSobre {
+    width: 400px;
+    max-height: 400px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 3px black;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
     display: flex;
     position: relative;
     margin: auto 30px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
 }
-div#sobre div.imgSobre:hover{
-    box-shadow: 0px 0px 25px 3px black;
+
+div#sobre div.imgSobre:hover {
+    animation: hover-sombra 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
 }
-div#sobre div.imgSobre img{
+
+div#sobre div.imgSobre img {
+    display: flex;
     width: 100%;
 }
-div#sobre div.textSobre{
+
+div#sobre div.textSobre {
     width: 60%;
     padding: 10px;
     margin: auto 30px;
 }
-div#sobre div.textSobre h2{
-font-family: var(--bold);
-color: var(--cor-principal);
-font-size: 30px;
+
+div#sobre div.textSobre h2 {
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 30px;
 }
 
-div#sobre div.textSobre p{
+div#sobre div.textSobre p {
     font-family: var(--regular);
     font-size: 20px;
 }
 
-div#projetos{
+div#projetos {
     width: 100%;
-    padding: 0px 200px;
+    padding: 75px 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-div#projetos h1.titleProjetos{
-    margin: 50px 0;
+div#projetos h1.titleProjetos {
     font-family: var(--bold);
     color: var(--cor-principal);
     font-size: 45px;
 }
 
-div#projetos div.projetosCards{
+div#projetos div.projetosCards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-div#projetos div.projectcard{
+div#projetos div.projectcard {
     width: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    height: 500px;
-    overflow: hidden;
+    height: 550px;
     background-color: var(--cor-fundo-claro);
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.362) ;
-    margin: 15px;
-}
-div#projetos div.projectcard div.linkCard{
-    display: none;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.362);
+    margin: 25px;
+    align-items: center;
+    overflow: hidden;
 }
 
-div#projetos div.projectcard img{
+div#projetos div.projectcard:hover {
+    animation: hover-sombra 0.3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+div#projetos div.projectcard img.imgProjeto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 250px;
+    width: 80%;
+    border-radius: 15px;
+    object-fit: cover;
+    top: 0;
+}
+
+div#projetos div.projectcard h2.titleCard {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 20px;
+}
+
+div#projetos div.projectcard p.descCard {
+    display: flex;
+    width: 80%;
+    font-family: var(--regular);
+}
+
+div#projetos div.projectcard h5.tecCard {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 20px;
+}
+
+div#projetos div.projectcard div.linkCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    border-top: 1px solid var(--cor-preto);
+}
+
+div#projetos div.projectcard div.linkCard a.githubCard {
+    border-right: 1px solid var(--cor-preto);
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div#projetos div.projectcard div.linkCard a.githubCard img {
     display: flex;
     justify-content: center;
     margin: auto;
-    height: 250px;
-    border-radius: 15px;
-    width: 80%;
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    filter: brightness(100) invert(1);
+}
+
+div#projetos div.projectcard div.linkCard a.verSiteCard {
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div#projetos div.projectcard div.linkCard a.verSiteCard img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 35px;
+    width: 35px;
     object-fit: cover;
 }
-div#projetos div.projectcard h2.titleCard{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-    font-family: var(--bold);
-    color: var(--cor-principal);
-    font-size: 20px;
+
+#projetos div.projectcard div.linkCard a.verSiteCard:hover {
+    animation: trocar-cor 0.5s ease-out 1;
+    background-color: var(--cor-principal);
 }
 
-div#projetos div.projectcard p.descCard{
+#projetos div.projectcard div.linkCard a.verSiteCard:hover img {
+    filter: brightness(100) invert(1);
+}
+
+#projetos div.projectcard div.linkCard a.githubCard:hover {
+    background-color: var(--cor-principal);
+    animation: trocar-cor 0.5s ease-in-out 1;
+}
+
+#projetos div.projectcard div.linkCard a.githubCard:hover img {
+    filter: none;
+}
+
+#conhecimentos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--cor-fundo-claro);
+    padding: 75px 200px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#conhecimentos h1.titleConhecimentos {
+    font-family: var(--bold);
+    color: var(--cor-principal);
+    font-size: 45px;
+}
+
+#conhecimentos div.groupCardConhecimentos {
     display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#conhecimentos div.cardConhecimento {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--bold);
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    font-family: var(--regular);
+    margin: 20px;
+    position: relative;
+    object-fit: cover;
 }
-div#projetos div.projectcard h5.tecCard{
+
+#conhecimentos div.cardConhecimento:hover {
+    animation: hover-sombra 0.3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+#conhecimentos div.cardConhecimento img {
     width: 100%;
-    align-items: center;
+    height: 100%;
+    margin: 5px 15px;
+}
+
+#conhecimentos div.cardConhecimento:hover img {
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+DIV#contato {
+    width: 100%;
+    padding: 75px 200px;
     display: flex;
-    justify-content: center;
-    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#contato h1.titleCcontato {
     font-family: var(--bold);
     color: var(--cor-principal);
-    font-size: 20px;
+    font-size: 45px;
+}
+
+div#contato div.contentContato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+div#contato div.contentContato div.textContato {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: left;
+}
+
+div#contato div.contentContato div.textContato a.cardContato {
+    display: flex;
+    align-items: left;
+    width: 320px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--cor-fundo-claro);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px hsl(0, 0%, 0%, 0.4);
+    margin: 10px;
+    color: #000;
+}
+
+div#contato div.textContato a.cardContato:hover {
+    animation: hover-sombra 0.2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+div#contato div.textContato a.cardContato img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
 }
 
 
 
 
-
-@media (max-width: 1100px){
-    div#home{
+@media (max-width: 1100px) {
+    div#home {
         flex-direction: column;
         padding: 0;
         height: auto;
     }
-    div#home div.textHome{
+
+    div#home div.textHome {
         margin: 50px 0;
     }
-    div#home div.animationHome{
+
+    div#home div.animationHome {
         margin: 50px 0;
     }
 }

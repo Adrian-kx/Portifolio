@@ -15,3 +15,34 @@
         transform: translateY(-10%);
     }
 }
+
+
+
+@keyframes trocar-cor {
+    0% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(100);
+    }
+}
+
+
+@keyframes hover-sombra {
+    0% {
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.616);
+    }
+}
+
+
+@keyframes girar {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
