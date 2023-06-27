@@ -1,28 +1,27 @@
 :root {
 
-    /* Variáveis de Cores */
-    --cor-branco: #ffffff;
-    --cor-fundo-claro:#ffffffa5;
-    --cor-preto: #000000;
-    --cor-principal: #10be00;
-    --cor-cinza-claro: #cdcdcdbb;
-    
+  /* Variáveis de Cores */
+  --cor-branco: #ffffff;
+  --cor-fundo-claro: #ffffffa5;
+  --cor-preto: #000000;
+  --cor-principal: #10be00;
+  --cor-cinza-claro: #cdcdcdbb;
+  --regular: 'mark-pro-regular';
+  --bold: 'mark-pro-bold';
+}
 
-    
-    --regular: 'mark-pro-regular';
-    --bold: 'mark-pro-bold';
-  }
-  @font-face {
-    font-family: 'mark-pro-bold';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    src: url('./../fonts/mark-pro-bold.woff') format('woff');
-  }
-  @font-face {
-    font-family: 'mark-pro-regular';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    src: url('./../fonts/mark-pro-regular.woff') format('woff');
-  }
+@font-face {
+  font-family: 'mark-pro-bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('./../fonts/mark-pro-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'mark-pro-regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('./../fonts/mark-pro-regular.woff') format('woff');
+}
