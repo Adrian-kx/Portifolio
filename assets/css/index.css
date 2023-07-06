@@ -21,11 +21,11 @@ header {
     display: flex;
     justify-content: center;
     padding: 0 200px;
+    position: fixed;
     align-items: center;
 }
 
 .header-scrolled {
-    position: fixed;
     backdrop-filter: blur(50px);
     /* Adicionando o efeito de desfoque */
     -webkit-backdrop-filter: blur(50px);
@@ -70,7 +70,7 @@ nav ul.links li {
 
 
 ul.links li .link {
-    font-size: 18px;
+    font-size: 2.5vh;
     width: 100%;
     height: 100%;
     position: relative;
@@ -112,11 +112,12 @@ section {
 div#home {
     display: flex;
     width: 100%;
-    height: 650px;
+    height: 90vh;
     justify-content: space-between;
     align-items: center;
     font-family: var(--bold);
     padding: 0px 200px;
+    margin-top: 100px;
 }
 
 div#home div.textHome {
@@ -129,13 +130,13 @@ div#home div.textHome {
 div#home div.textHome p.helloHome {
     display: flex;
     color: var(--cor-principal);
-    font-size: 22px;
+    font-size: 3vh;
     margin: 10px 0;
 }
 
 div#home div.textHome h1 {
     display: flex;
-    font-size: 75px;
+    font-size: 11vh;
     margin: 15px 0;
     font-family: var(--bold);
 }
@@ -196,15 +197,15 @@ div#sobre {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: auto;
+    height: 70vh;
     background-color: var(--cor-fundo-claro);
     padding: 50px 200px;
     align-items: center;
 }
 
 div#sobre div.imgSobre {
-    width: 400px;
-    height: 400px;
+    width: 55vh;
+    height: 55vh;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
@@ -231,12 +232,12 @@ div#sobre div.textSobre {
 div#sobre div.textSobre h2 {
     font-family: var(--bold);
     color: var(--cor-principal);
-    font-size: 30px;
+    font-size: 4vh;
 }
 
 div#sobre div.textSobre p {
     font-family: var(--regular);
-    font-size: 20px;
+    font-size: 2.5vh;
 }
 
 div#projetos {
