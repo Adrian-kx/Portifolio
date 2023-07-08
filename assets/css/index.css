@@ -51,10 +51,9 @@ header nav {
 }
 
 header nav a img.logo {
-    width: 177.7px;
-    height: 50px;
+    height: 70px;
+    filter: brightness(0);
 }
-
 header nav ul.links {
     list-style: none;
     display: flex;
@@ -534,8 +533,8 @@ footer {
 }
 
 footer img.logo {
-    width: 177.7px;
-    height: 50px;
+    height: 90px;
+    filter: brightness(0);
 }
 
 footer div.direitos p {
