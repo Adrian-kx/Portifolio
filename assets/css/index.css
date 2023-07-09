@@ -3,9 +3,9 @@
 @import './scroolbar.css';
 @import './variables.css';
 
-p{
+p {
     text-align: justify !important;
-  }
+}
 
 body {
     background-color: var(--cor-cinza-claro);
@@ -54,6 +54,7 @@ header nav a img.logo {
     height: 70px;
     filter: brightness(0);
 }
+
 header nav ul.links {
     list-style: none;
     display: flex;
@@ -278,7 +279,7 @@ div#projetos div.projectcard {
 }
 
 div#projetos div.projectcard:hover,
-div#projetos div.projectcard:active  {
+div#projetos div.projectcard:active {
     animation: hover-sombra 0.3s ease-in-out 1;
     animation-fill-mode: forwards;
 }
@@ -383,7 +384,7 @@ div#projetos div.projectcard div.linkCard a.verSiteCard img {
     animation: trocar-cor 0.5s ease-in-out 1;
 }
 
-#projetos div.projectcard div.linkCard a.githubCard:hover img{
+#projetos div.projectcard div.linkCard a.githubCard:hover img {
     filter: none;
 }
 
@@ -428,9 +429,9 @@ div#projetos div.projectcard div.linkCard a.verSiteCard img {
     position: relative;
     object-fit: cover;
 }
- 
+
 #conhecimentos div.cardConhecimento:hover,
-#conhecimentos div.cardConhecimento:active{
+#conhecimentos div.cardConhecimento:active {
     animation: hover-sombra 0.3s ease-in-out 1;
     animation-fill-mode: forwards;
 }
